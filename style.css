@@ -31,6 +31,7 @@
 #formulario{
     width: 80%;
     height: 50%;
+    overflow: hidden;
     margin: 40px auto;
 
 }
@@ -56,9 +57,9 @@
     width: 100%;
     display: flex;
 }
-.div-info>img{
+#foto{
     width: 35%;
-    height: 100%;
+    height: 180px;
 }
 #texto{
     width: 65%;
@@ -67,8 +68,9 @@
 #texto>h3{
     font-size: 20px;
     color: black;
-    padding-bottom: 2px;
-    border-bottom: 0.5px solid grey ;
+    padding-bottom: 10px;
+    text-transform: capitalize;
+    border-bottom: 0.3px solid grey ;
 }
 #texto>p{
     margin: 1px 0;

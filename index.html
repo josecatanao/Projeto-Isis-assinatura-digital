@@ -1,176 +1,113 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <script src="https://cdn.ckeditor.com/4.14.0/standard/ckeditor.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://rawcdn.githack.com/zenorocha/clipboard.js/v2.0.6/dist/clipboard.min.js"></script>
+    <title>Assiantura</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/e0ca45ab7d.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.ckeditor.com/4.14.0/standard/ckeditor.js"></script>
+    <script src="https://rawcdn.githack.com/zenorocha/clipboard.js/v2.0.6/dist/clipboard.min.js"></script>
 </head>
-
 <body>
 
-    <div id="bloco-tudo-site">
+    <!--bloco tudo-->
+    <section id="bloco-tudo">
 
-            <div id="bloco-envolve">
-                
-                <div id="bloco-tudo-form" class=" shadow-lg">
-                    <div class="bloco-form">
-                        <img id="logo" src="fotos/logo.jpg" alt="">
-                        <section id="formulario">
-                            <form action="">
-                                <div class="form-group">
-                                    <label for="nome">Nome Completo</label>
-                                    <input type="text" class="form-control" id="nome" placeholder="Nome Completo">
-                                </div>
+        <!--bloco formulario-->
+        <section id="bloco-form-tudo">
 
-                                <div class="form-group">
-                                    <label for="exampleFormControlFile1">Foto</label>
-                                    <input type="file" class="form-control-file" id="imagem"  onchange="previewImagem()">
-                                </div>
+            <section id="bloco-form">
 
-                                <div class="form-row">
-                                    <div class="form-group col-md-7">
-                                    <label for="departamento">Departamento</label>
-                                    <input type="email" class="form-control" id="departamento" placeholder="Departamento">
-                                    </div>
-                                    <div class="form-group col-md-5">
-                                    <label for="telefone">Telefone</label>
-                                    <input type="tel" class="form-control" id="telefone" placeholder="telefone">
-                                    </div>
-                                </div>
+                <img src="fotos/logo.png" width="100" alt="">
 
-                                <div class="form-group">
-                                    <label for="email">E-mail</label>
-                                    <input type="text" class="form-control" id="email" placeholder="E-mail">
-                                </div>
+                <form id="form">
 
-                                <div class="form-row">
-                                    <div class="form-group col-md-6">
-                                    <label for="cargo">Cargo</label>
-                                    <input type="text" class="form-control" id="cargo" placeholder="Cargo">
-                                    </div>
-                                    <div class="form-group col-md-6">
-                                        <label for="exampleFormControlSelect1">Empresa</label>
-                                        <select class="form-control"  id="empresa">
-                                        <option value="label1">Isis1</option>
-                                        <option>Isis2</option>
-                                        <option>Isis3</option>
-                                        <option>Isis4</option>
-                                        <option>Isis5</option>
-                                        </select>
-                                    </div>
-                                </div>
+                    <label for="nome">Nome completo</label>
+                    <input  class="input" type="text" id="nome" placeholder="Nome Completo">
+                     
+                    <label for="imagem">Foto</label>
+                    <input type="file"  id="imagem"  onchange="previewImagem()">
 
-                                <div class="form-row">
-                                    <div class="form-group col-md-4">
-                                        <label for="link1">Facebook</label>
-                                        <input type="text" class="form-control" id="link1">
-                                    </div>
+                    <div class="bloco-input-duplo">
 
-                                    <div class="form-group col-md-4">
-                                        <label for="link2">Instagram</label>
-                                        <input type="text" class="form-control" id="link2">
-                                    </div>
-
-
-                                    <div class="form-group col-md-4">
-                                        <label for="link3">Linkdin</label>
-                                        <input type="text" class="form-control" id="link3">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="gridCheck">
-                                    <label class="form-check-label" for="gridCheck">
-                                        Clique em mim
-                                    </label>
-                                    </div>
-                                </div>
-                                <button type="submit" class="btn btn-primary">Entrar</button>
-                                    
-                                </div>
-                            </form>
-                        </section>
-                </div>
-
-                <div id="bloco-tudo-email" class="shadow-lg border">
-                    <img src="fotos/Partecima.jpg" alt="">
-                    <div style="user-select: all;" class="assinatura">
-                       <img id="IsisCima" src="fotos/isis parte de cima.jpg" alt="">
-
-                       <div class="div-info">
-                          <img id="foto" src="https://i.stack.imgur.com/Hq8za.jpg" alt=""> 
-                          <section id="texto">
-                              <h3 Id="Textnome"></h3>
-                              <p><span Id="Textcargo">Cargo</span> | <span  Id="Textempresa">empresa</span></p>
-                              <p >Dp: <span Id="Textdep"></span></p>
-                              <p>Telefone: <span  Id="Texttel"></span></p>
-                              <p>Email: <span Id="Textemail"></span></p>
-                              <p>
-                                  <span></span><i class="fab fa-facebook-square"></i></span>|
-                                  <span><i class="fab fa-instagram-square"></i></span>|
-                                  <span><i class="fab fa-linkedin"></i></span></p>
-                          </section>
-                       </div>
-
-                      <img id="IsisBaixo" src="fotos/isis parte de baixo.jpg" alt="">
+                        <div class="duplo-input">
+                            <label for="departamento">Departamento</label>
+                            <input type="text"  id="departamento" placeholder="Departamento">
+                        </div>
+                        
+                        <div class="duplo-input">
+                            <label for="telefone">Telefone</label>
+                            <input type="tel"  id="telefone" placeholder="telefone">
+                        </div>   
                     </div>
-                   <img src="fotos/Partebaixo.jpg" alt="">
+
+                    <label for="email">E-mail</label>
+                    <input type="text" class="input" id="email" placeholder="E-mail">
+
+                    <div class="bloco-input-duplo">
+
+                        <div class="duplo-input">
+                            <label for="cargo">Cargo</label>
+                            <input type="text"  id="cargo" placeholder="Cargo">
+                        </div>
+
+                        <div class="duplo-input">
+                            <label for="empresa">Empresa</label>
+                            <select class="form-control input"  id="empresa">
+                                <option value="LBV Sousa">LBV Sousa</option>
+                                <option value="Belo vale">Belo vale</option>
+                                <option value="LBV Jaguaribe">LBV Jaguaribe</option>
+                                <option value="LBV Juazeiro">LBV Juazeiro</option>
+                            </select>
+                        </div>
+
+                    </div>
+
+                    <button class="btn" data-clipboard-target="#foo">
+                        Gerar Assiantura
+                    </button>
+
+                </form>
+
+            </section>
+
+        </section>
+        <!--bloco formulario fim-->
+
+
+        <!--bloco assinatura-->
+        <section class="bloco-assi-tudo" id="foo">
+
+            <section class="isis-retrato">
+                <img src="fotos/teste2.jpg"  alt="">
+            </section>
+
+            <section id="assi-corpo">
+                <div id="foto-fun">
+                    <img  id="foto" src="https://ipuc.pucminas.br/green/documentos/green/unknow_usr.png"  alt="">
                 </div>
 
-            </div>
+                <div id="texto"> 
+                    <h3 Id="Textnome">Nome completo</h3>
+                    <p><span Id="Textcargo">Cargo</span> | <span  Id="Textempresa">Empresa</span></p>
+                    <p >Dp: <span Id="Textdep"></span></p>
+                    <p>Telefone: <span  Id="Texttel"></span></p>
+                    <p>Email: <span Id="Textemail"></span></p>
+                </div>
+            </section>
 
-     </div>
+            <section class="isis-retrato">
+                <img  src="fotos/teste3.jpg"  alt="">
+            </section>
+
+        </section>
+        <!--bloco assinatura fim-->
+
+    </section>
+    <!--bloco tudo fim-->
 
 
-
-     <!-- JavaScript (Opcional) -->
-    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
     <script src="script.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
-
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

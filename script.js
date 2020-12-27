@@ -29,30 +29,6 @@ $( "#empresa" ).blur(function() {
    
 });
 
-
-
-
-
-
-$( "#link1" ).blur(function() {
-    var link1 = $("#link1" ).val();
-    alert(link1);
-});
-
-$( "#link2" ).blur(function() {
-    var link2 = $("#link2" ).val();
-    alert(link2);
-});
-
-
-$( "#link3" ).blur(function() {
-    var link3 = $("#link3" ).val();
-    alert(link3);
-});
-
-
-
-
 	
 function previewImagem(){
     var imagem = document.querySelector('#imagem').files[0];
@@ -70,3 +46,5 @@ function previewImagem(){
         preview.src = "";
     }
 }
+
+new ClipboardJS('.btn');

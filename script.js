@@ -1,24 +1,24 @@
-$( "#nome" ).blur(function() {
+$( "#nome" ).keyup(function() {
     var nome = $("#nome" ).val();
     $("#Textnome").text(nome);
 });
 
-$( "#departamento" ).blur(function() {
+$( "#departamento" ).keyup(function() {
     var departamento = $("#departamento" ).val();
     $("#Textdep").text(departamento);
 });
 
-$( "#telefone" ).blur(function() {
+$( "#telefone" ).keyup(function() {
     var telefone = $("#telefone" ).val();
     $("#Texttel").text(telefone );
 });
 
-$( "#email" ).blur(function() {
+$( "#email" ).keyup(function() {
     var email = $("#email" ).val();
     $("#Textemail").text(email );
 });
 
-$( "#cargo" ).blur(function() {
+$( "#cargo" ).keyup(function() {
     var cargo = $("#cargo" ).val();
     $("#Textcargo").text(cargo);
 });

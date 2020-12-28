@@ -23,7 +23,7 @@ $( "#cargo" ).keyup(function() {
     $("#Textcargo").text(cargo);
 });
 
-$( "#empresa" ).blur(function() {
+$( "#empresa" ).click(function() {
     var empresa = $("#empresa" ).val();
     $("#Textempresa").text(empresa);
    

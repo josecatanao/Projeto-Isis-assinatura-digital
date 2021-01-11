@@ -191,4 +191,67 @@ body{
 /************/
 
 
+/*css da tabela da assinatura*/
+
+
+#foto{
+    width: 90px;
+}
+.texto{
+    width: 200px;
+    height:90px ;
+    margin-left: 10px;
+    padding-right: 5px;
+}
+.texto>p{
+    font-size: 10px;
+    font-weight: bold;
+    margin: 3px 2px;
+    color: grey;
+}
+.texto>h3{
+    font-size: 13px;
+    margin-bottom: 5px;
+    padding-bottom: 3px;
+    border-bottom: 0.5px solid rgb(206, 205, 205);
+}
+
+.texto-mais{
+    width: 130px;
+    height:90px ;
+    margin-left: 10px;
+}
+.texto-mais>p{
+    font-size: 10px;
+    font-weight: bold;
+    margin: 3px 2px;
+    color: grey;
+}
+#logos{
+    border-top: 1px solid grey;
+}
+
+#logoisis{
+    margin-top: -5px;
+    width: 40px;
+    
+}
+
+#logoface{
+    float:right;
+    width: 25px;
+}
+
+#logoinsta{
+    width: 25px;
+    float: right;
+}
+#bloco-texto{
+    border-right: 1px solid grey;
+}
+
+
+
+/*css da tabela da assinatura*/
+
 

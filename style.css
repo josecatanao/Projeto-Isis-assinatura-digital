@@ -20,11 +20,12 @@ body{
 
 /* bloco geral do site */
  #bloco-tudo{
-    width: 700px;
+    width: 1000px;
     height: 491px;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    border:1px solid red;
     
    
  } 
@@ -32,7 +33,8 @@ body{
 
 /*referente a o bloco do formulario*/
 #bloco-form-tudo{
-    width: 70%;
+    border: 1px solid green;
+    width: 50%;
     height: 491px;
     background-color: white;
     border-radius: 10px;
@@ -124,9 +126,9 @@ body{
 
 /*referente a o bloco da assiantura*/
 .bloco-assi-tudo{
+    border:1px solid red;
     width: 50%;
-    height: 230px;
-    margin-left: -20%;
+    margin-left: -15%;
     border-radius: 10px;
     overflow: hidden;
     display: flex;
@@ -145,7 +147,7 @@ body{
 }
 .assi-corpo{
     width: 100%;
-    height: 130px;
+    height: 190px;
     display: flex;
     justify-content: center;   
     align-items: center;

@@ -35,5 +35,8 @@ $( "#imagem" ).keyup(function() {
    
 });
 
+function alerta(){
+    alert("Assinatura Gerada")
+}
 
 new ClipboardJS('.btn');

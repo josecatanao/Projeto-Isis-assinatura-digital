@@ -25,15 +25,11 @@ body{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    border:1px solid red;
-    
-   
  } 
 /************/
 
 /*referente a o bloco do formulario*/
 #bloco-form-tudo{
-    border: 1px solid green;
     width: 50%;
     height: 491px;
     background-color: white;
@@ -126,7 +122,6 @@ body{
 
 /*referente a o bloco da assiantura*/
 .bloco-assi-tudo{
-    border:1px solid red;
     width: 50%;
     margin-left: -15%;
     border-radius: 10px;
@@ -197,7 +192,9 @@ body{
 
 
 #foto{
-    width: 90px;
+    width: 93px;
+    height: 115px;
+    border-radius: 5px;
 }
 .texto{
     width: 200px;

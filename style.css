@@ -122,7 +122,6 @@ body{
 
 /*referente a o bloco da assiantura*/
 .bloco-assi-tudo{
-    width: 50%;
     margin-left: -10%;
     border-radius: 10px;
     overflow: hidden;
@@ -195,6 +194,7 @@ body{
     width: 93px;
     height: 115px;
     border-radius: 5px;
+    
 }
 .texto{
     width: 200px;

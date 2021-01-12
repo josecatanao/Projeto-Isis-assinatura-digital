@@ -20,7 +20,7 @@ body{
 
 /* bloco geral do site */
  #bloco-tudo{
-    width: 1000px;
+    width: 900px;
     height: 491px;
     display: flex;
     align-items: center;
@@ -123,7 +123,7 @@ body{
 /*referente a o bloco da assiantura*/
 .bloco-assi-tudo{
     width: 50%;
-    margin-left: -15%;
+    margin-left: -10%;
     border-radius: 10px;
     overflow: hidden;
     display: flex;
@@ -219,12 +219,14 @@ body{
     width: 130px;
     height:90px ;
     margin-left: 10px;
+    
 }
 .texto-mais>p{
     font-size: 10px;
     font-weight: bold;
     margin: 3px 2px;
     color: grey;
+
 }
 #logos{
     border-top: 1px solid grey;
@@ -254,3 +256,31 @@ body{
 /*css da tabela da assinatura*/
 
 
+@media(max-width:828px){
+
+    #bloco-tudo{
+        width: 100%;
+        height: 100vh;
+        margin-top: 50px;
+        display: grid;
+        flex-direction: row-reverse;
+        justify-content: center;
+     } 
+
+    /***********************************/
+
+    #bloco-form-tudo{
+        width: 100%;
+        height: 491px;
+        display: flex;
+        justify-content: center;
+    }
+     /**********************************/
+     
+     .bloco-assi-tudo{
+        width: 100%;
+        margin: 180px auto;
+        border-radius: 10px;
+    }
+
+}
